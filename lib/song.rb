@@ -23,8 +23,8 @@ class Song
     
     artist_index = Artist.all.index{|artist| artist.name == artist_name}
     song.artist = Artist.all[artist_index]
-    Artist.all[artist_index] << song_name 
-    binding.pry 
+    Artist.all[artist_index].songs << song_name 
+    binding.pry
     song
   end
 end 
