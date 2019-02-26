@@ -20,8 +20,8 @@ class Song
     genre = file_data[2]
     
     song = Song.new(song_name)
+  
     
-    song.name = song_name
     song
   end
 end 
