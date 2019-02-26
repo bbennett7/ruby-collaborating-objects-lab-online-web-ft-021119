@@ -22,7 +22,7 @@ class Song
     song = Song.new(song_name)
     
     artist_index = Artist.all.index{|artist| artist.name == artist_name}
-    Artist.all[artist_index].songs << song_name 
+    Artist.all.songs << song_name 
     
     song
   end
