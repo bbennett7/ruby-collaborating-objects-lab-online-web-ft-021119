@@ -20,8 +20,7 @@ class Song
     genre = file_data[2]
     
     song = Song.new(song_name)
-  
-    
+    binding.pry 
     song
   end
 end 
