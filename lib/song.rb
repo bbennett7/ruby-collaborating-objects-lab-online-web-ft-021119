@@ -21,8 +21,10 @@ class Song
     
     song = Song.new(song_name)
     
-    Artist.all.index{|artist| artist.name == artist_name}
-   
+    artist_index = Artist.all.index{|artist| artist.name == artist_name}
+    song.artist = Artist.all.fetch(artist_index)
+    Artist.all[artist_index].songs << song_name 
+    
     song
   end
 end 
