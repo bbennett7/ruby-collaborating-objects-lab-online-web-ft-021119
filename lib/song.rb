@@ -21,6 +21,7 @@ class Song
     
     song = Song.new(song_name)
     artist_index = Artist.all.index{|artist| artist.name == artist_name}
+    binding.pry
     song.artst = Artist.all[artist_index]
     song
   end
