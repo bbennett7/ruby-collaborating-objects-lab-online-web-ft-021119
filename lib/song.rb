@@ -22,7 +22,6 @@ class Song
     song = Song.new(song_name)
     
  
-    end
     
     song
   end
