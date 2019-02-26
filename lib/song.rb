@@ -20,7 +20,7 @@ class Song
     genre = file_data[2]
     
     song = Song.new(song_name)
-    binding.pry 
+    Artist.find_or_create_by_name(artist_name)
     song
   end
 end 
