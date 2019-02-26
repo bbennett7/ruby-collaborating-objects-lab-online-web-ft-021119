@@ -20,7 +20,7 @@ class Song
     genre = file_data[2]
     
     song = Song.new(song_name)
-    Artist.find_or_create_by_name(artist_name)
+    song.artist = Artist.find_or_create_by_name(artist_name)
     song
   end
 end 
