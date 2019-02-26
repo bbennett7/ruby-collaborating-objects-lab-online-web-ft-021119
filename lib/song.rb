@@ -21,8 +21,10 @@ class Song
     
     song = Song.new(song_name)
     
-    artist_index = Artist.all.index{|artist| artist.name == artist_name}
-    Artist.all.songs << song_name 
+    #artist_index = Artist.all.index{|artist| artist.name == artist_name}
+    if Artist.all.name == artist_name
+      Artist.all.songs << song_name 
+    end
     
     song
   end
