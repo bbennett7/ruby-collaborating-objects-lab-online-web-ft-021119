@@ -21,6 +21,7 @@ class Song
     
     song = Song.new(song_name)
     
+    song.artst = Artist.all[]
     song
   end
 end 
