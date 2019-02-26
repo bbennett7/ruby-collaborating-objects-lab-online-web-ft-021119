@@ -20,9 +20,12 @@ class Song
     genre = file_data[2]
     
     song = Song.new(song_name)
+    
     artist_index = Artist.all.index{|artist| artist.name == artist_name}
     song.artist = Artist.all[artist_index]
-    binding.pry 
+    Artist.all[artist_index]
+    binding.pry
+ 
     song
   end
 end 
